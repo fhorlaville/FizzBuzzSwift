@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E5A5F1961B5AF32C00421EDD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A5F1951B5AF32C00421EDD /* main.swift */; };
+		E5A5F1A51B5AF35200421EDD /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A5F1A41B5AF35200421EDD /* Tests.swift */; };
+		E5A5F1A91B5AF36F00421EDD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A5F1951B5AF32C00421EDD /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +27,20 @@
 /* Begin PBXFileReference section */
 		E5A5F1921B5AF32C00421EDD /* FizzBuzzSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FizzBuzzSwift; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A5F1951B5AF32C00421EDD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E5A5F1A01B5AF35200421EDD /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5A5F1A31B5AF35200421EDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5A5F1A41B5AF35200421EDD /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E5A5F18F1B5AF32C00421EDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5A5F19D1B5AF35200421EDD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				E5A5F1941B5AF32C00421EDD /* FizzBuzzSwift */,
+				E5A5F1A11B5AF35200421EDD /* Tests */,
 				E5A5F1931B5AF32C00421EDD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				E5A5F1921B5AF32C00421EDD /* FizzBuzzSwift */,
+				E5A5F1A01B5AF35200421EDD /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +74,23 @@
 				E5A5F1951B5AF32C00421EDD /* main.swift */,
 			);
 			path = FizzBuzzSwift;
+			sourceTree = "<group>";
+		};
+		E5A5F1A11B5AF35200421EDD /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E5A5F1A41B5AF35200421EDD /* Tests.swift */,
+				E5A5F1A21B5AF35200421EDD /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		E5A5F1A21B5AF35200421EDD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5A5F1A31B5AF35200421EDD /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +113,23 @@
 			productReference = E5A5F1921B5AF32C00421EDD /* FizzBuzzSwift */;
 			productType = "com.apple.product-type.tool";
 		};
+		E5A5F19F1B5AF35200421EDD /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5A5F1A61B5AF35200421EDD /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				E5A5F19C1B5AF35200421EDD /* Sources */,
+				E5A5F19D1B5AF35200421EDD /* Frameworks */,
+				E5A5F19E1B5AF35200421EDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = E5A5F1A01B5AF35200421EDD /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +140,9 @@
 				ORGANIZATIONNAME = "TAM Software";
 				TargetAttributes = {
 					E5A5F1911B5AF32C00421EDD = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					E5A5F19F1B5AF35200421EDD = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
 				};
@@ -109,9 +160,20 @@
 			projectRoot = "";
 			targets = (
 				E5A5F1911B5AF32C00421EDD /* FizzBuzzSwift */,
+				E5A5F19F1B5AF35200421EDD /* Tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E5A5F19E1B5AF35200421EDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E5A5F18E1B5AF32C00421EDD /* Sources */ = {
@@ -119,6 +181,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5A5F1961B5AF32C00421EDD /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5A5F19C1B5AF35200421EDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5A5F1A91B5AF36F00421EDD /* main.swift in Sources */,
+				E5A5F1A51B5AF35200421EDD /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +288,38 @@
 			};
 			name = Release;
 		};
+		E5A5F1A71B5AF35200421EDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E5A5F1A81B5AF35200421EDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -234,6 +337,14 @@
 			buildConfigurations = (
 				E5A5F19A1B5AF32C00421EDD /* Debug */,
 				E5A5F19B1B5AF32C00421EDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E5A5F1A61B5AF35200421EDD /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5A5F1A71B5AF35200421EDD /* Debug */,
+				E5A5F1A81B5AF35200421EDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

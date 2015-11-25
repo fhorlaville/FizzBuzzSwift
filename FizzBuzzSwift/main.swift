@@ -8,5 +8,19 @@
 
 import Foundation
 
-println("Hello, World!")
 
+func fizzBuzz(num :Int) -> String {
+    var result = ""
+    
+    if (num % 3 == 0) { result = "Fizz" }
+    if (num % 5 == 0) { result += "Buzz" }
+    
+    if (result == "") { result = String(num) }
+    
+    return result;
+}
+
+
+for (var i=1; i<=100; i++) {
+    println(fizzBuzz(i))
+}
